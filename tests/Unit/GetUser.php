@@ -16,7 +16,7 @@ class GetUser extends TestCase
      *
      * @return void
      */
-    public function testExample()
+    public function getUserApiTest()
     {
         $users = (new UserController())->index;
         $this->assertTrue(true, $users);

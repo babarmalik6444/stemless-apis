@@ -16,6 +16,60 @@ class UserController extends Controller
         
     }
 
+    /**
+     * @OA\Info(title="Apis", version="0.1")
+     */
+
+    /**
+     * @OA\Get(
+     *     path="/api/user",
+     *     summary="Get list of users",
+     *     @OA\Parameter(
+     *         name="first_name",
+     *         in="query",
+     *         description="Status values that need to be considered for filter",
+     *         required=false,
+     *         @OA\Schema(
+     *         type="string"
+     *         ),
+     *         style="form"
+     *     ),
+     *     @OA\Parameter(
+     *         name="last_name",
+     *         in="query",
+     *         description="Status values that need to be considered for filter",
+     *         required=false,
+     *         @OA\Schema(
+     *         type="string"
+     *         ),
+     *         style="form"
+     *     ),
+     *     @OA\Parameter(
+     *         name="email",
+     *         in="query",
+     *         description="Status values that need to be considered for filter",
+     *         required=false,
+     *         @OA\Schema(
+     *         type="string"
+     *         ),
+     *         style="form"
+     *     ),
+     *     @OA\Parameter(
+     *         name="phone",
+     *         in="query",
+     *         description="Status values that need to be considered for filter",
+     *         required=false,
+     *         @OA\Schema(
+     *         type="string"
+     *         ),
+     *         style="form"
+     *     ),
+     *     @OA\Response(response="200", description="all users"),
+     *     @OA\Response(response=401, description="Unauthenticated"),
+     *     @OA\Response(response=403,description="Forbidden")
+     * )
+     */
+
     public function index(Request $request)
     {
         $sortColumn = ($request->sort_column)?$request->sort_column:'id';

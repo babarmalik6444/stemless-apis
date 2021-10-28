@@ -37,7 +37,8 @@
         "doctrine/dbal": "^2.0",
         "telnyx/telnyx-php": "^2.5",
         "giggsey/libphonenumber-for-php": "^8.12",
-        "spatie/laravel-permission": "^4.4"
+        "spatie/laravel-permission": "^4.4",
+        "darkaonline/l5-swagger": "^8.0"
     },
     "require-dev": {
         "fzaninotto/faker": "~1.4",

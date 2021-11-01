@@ -30,7 +30,6 @@ class User extends Authenticatable
      *     format="int64",
      *     example=1
      * )
-     *
      * @var integer
      */
     private $id;

@@ -72,6 +72,7 @@ class UserController extends Controller
 
     public function index(Request $request)
     {
+        $this->authorize('create');
         $sortColumn = ($request->sort_column)?$request->sort_column:'id';
         $sortBy = ($request->sort_by)?$request->sort_by:'desc';
         $limit = ($request->page_size)?$request->page_size:'10';
